@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='test'>
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Code Test </title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="app.js"></script>
+		<script src="cCtrl.js"></script>
+
+	</head>
+	<body ng-controller='cCtrl as vm'>
+		<h1 class="text-xs-center">Code Test</h1>
+		<div ng-repeat='name in vm.names track by $index'>
+			<ul class ='list-group'></ul>
+				<li class ='list-group-item text-xs-center'> {{name}}</li>
+			</div>
+
+		
+
+
+		
+
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		
+	</body>
+</html>
